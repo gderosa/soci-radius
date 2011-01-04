@@ -1,1 +1,7 @@
-Make GitHub happy.
+Stub code to query FreeeRADIUS SQL db via SOCI C++ library.
+
+Uses dynamic backend library loading.
+
+http://soci.sourceforge.net/
+http://www.freeradius.org/
+
