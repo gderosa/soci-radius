@@ -1,2 +1,2 @@
 all:
-	g++ 1st.cpp -o 1st -lsoci_core -ldl -I /usr/local/include/soci -Wall -ansi
+	g++ soci-radius.cpp -o soci-radius -lsoci_core -ldl -I /usr/local/include/soci -Wall -ansi

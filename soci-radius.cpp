@@ -26,7 +26,7 @@ int main()
         // an useful query to get IP -> username mapping :
         // * ensure user is online
         // * in case of conflicts, take the most recent entry
-        string ip = "192.168.104.129";
+        string ip = "192.168.104.130";
         string query = "SELECT username FROM radacct WHERE acctstoptime IS NULL AND framedipaddress = '" + ip + "' order by acctstarttime desc limit 1";
         sql << query, into(username, ind);
       
