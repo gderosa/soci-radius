@@ -22,6 +22,10 @@ int main()
 
         int count;
         string table = "radacct";
+        // an useful query to get IP -> username mapping :
+        // * ensure user is online
+        // * in case of conflicts, take the most recent entry
+        // "select username from radacct where acctstoptime is null and framedipaddress = '192.168.104.129' order by acctstarttime desc limit 1;"
         sql << "select count(*) from radacct", into(count);
 
         cout 
