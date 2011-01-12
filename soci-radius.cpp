@@ -19,7 +19,7 @@ int main()
 {
     try
     {
-        session sql("mysql", "db=radius user=radius password=radius");
+        session sql("mysql", "host=localhost db=radius user=radius password=radius");
 
         string username;
         indicator ind;
